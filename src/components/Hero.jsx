@@ -164,19 +164,13 @@ export default function Hero({ onOpenContact }) {
                 </div>
               </a>
 
-              {/* app-ads.txt snippet info */}
-              <div className="p-3 rounded-lg bg-emerald-950/20 border border-emerald-500/20 flex items-center justify-between">
+              {/* Architecture & Quality Pill */}
+              <div className="p-3 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between text-xs text-slate-300">
                 <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                  <span className="text-xs text-emerald-300 font-mono font-medium">app-ads.txt root verified</span>
+                  <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <span className="font-mono text-slate-300">Clean Architecture & Offline First</span>
                 </div>
-                <a 
-                  href="/app-ads.txt" 
-                  target="_blank" 
-                  className="text-[11px] text-cyan-400 hover:underline font-mono"
-                >
-                  view file &rarr;
-                </a>
+                <span className="text-[11px] text-cyan-400 font-mono">100% Native & Flutter</span>
               </div>
 
             </div>

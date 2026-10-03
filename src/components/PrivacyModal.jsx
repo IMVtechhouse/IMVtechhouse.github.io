@@ -39,9 +39,9 @@ export default function PrivacyModal({ isOpen, onClose }) {
             In free ad-supported applications like Daily Planner, we use Google AdMob to deliver advertisements. Google AdMob may collect and process information such as Advertising ID, device model, and performance metrics in accordance with Google's policies.
           </p>
 
-          <h3 className="text-base font-bold text-white pt-2 border-t border-slate-800">3. Google AdMob & app-ads.txt Compliance</h3>
+          <h3 className="text-base font-bold text-white pt-2 border-t border-slate-800">3. Advertising Compliance</h3>
           <p>
-            IMVtechHouse maintains an official, transparent IAB Tech Lab compliant <code className="text-emerald-400 font-mono">app-ads.txt</code> record hosted at our root domain (<a href="/app-ads.txt" target="_blank" className="text-cyan-400 underline">https://imvtechhouse.github.io/app-ads.txt</a>) to eliminate ad fraud and guarantee legitimate publisher inventory.
+            We partner with Google AdMob adhering strictly to industry standards to deliver secure, non-intrusive ad experiences and verify authorized advertising channels.
           </p>
 
           <h3 className="text-base font-bold text-white pt-2 border-t border-slate-800">4. Developer Contact Information</h3>

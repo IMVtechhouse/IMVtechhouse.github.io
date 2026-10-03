@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import AppsSection from './components/AppsSection';
 import ClientWorkSection from './components/ClientWorkSection';
 import ServicesSection from './components/ServicesSection';
-import AdMobSection from './components/AdMobSection';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import PrivacyModal from './components/PrivacyModal';
@@ -36,8 +35,6 @@ export default function App() {
         <ServicesSection 
           onOpenContact={() => setIsContactOpen(true)}
         />
-
-        <AdMobSection />
       </main>
 
       {/* Footer */}

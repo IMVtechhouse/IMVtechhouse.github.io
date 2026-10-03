@@ -1,5 +1,6 @@
 import React from 'react';
-import { Smartphone, Globe, Mail, ShieldCheck, Heart, ArrowUp } from 'lucide-react';
+import { Mail, ArrowUp } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer({ onOpenContact, onOpenPrivacy }) {
   const scrollToTop = () => {
@@ -14,27 +15,10 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
           
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-center overflow-hidden">
-                <img src="/assets/imv-logo.png" alt="IMVtechHouse" className="w-full h-full object-contain p-1" />
-              </div>
-              <span className="font-heading font-extrabold text-xl text-white">
-                IMV<span className="text-cyan-400 font-light">techHouse</span>
-              </span>
-            </div>
+            <Logo />
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
               Engineering high-impact Android applications, bespoke web platforms, and automated enterprise ERP solutions with 3+ years of production experience.
             </p>
-            <div className="flex items-center gap-2 pt-2">
-              <a 
-                href="/app-ads.txt" 
-                target="_blank" 
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-mono"
-              >
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>app-ads.txt verified</span>
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -66,7 +50,7 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
             </ul>
           </div>
 
-          {/* Services & Compliance */}
+          {/* Compliance & Contact */}
           <div className="md:col-span-4 space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">
               Compliance & Contact
@@ -74,12 +58,7 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
             <ul className="space-y-2 text-xs">
               <li>
                 <a href="/privacy.html" target="_blank" className="hover:text-cyan-400 transition-colors">
-                  Privacy Policy (Official URL for Play Console)
-                </a>
-              </li>
-              <li>
-                <a href="/app-ads.txt" target="_blank" className="hover:text-cyan-400 transition-colors font-mono">
-                  IAB app-ads.txt Record
+                  Privacy Policy (Official Play Store URL)
                 </a>
               </li>
               <li>
@@ -91,7 +70,7 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
               <li className="pt-2">
                 <button
                   onClick={onOpenContact}
-                  className="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold text-white transition-colors"
+                  className="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold text-white transition-colors cursor-pointer"
                 >
                   Start a Project Inquiry
                 </button>
@@ -107,15 +86,12 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
             &copy; {new Date().getFullYear()} IMVtechHouse. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <button onClick={onOpenPrivacy} className="hover:text-slate-300 transition-colors">
-              Privacy
+            <button onClick={onOpenPrivacy} className="hover:text-slate-300 transition-colors cursor-pointer">
+              Privacy Policy
             </button>
-            <a href="/app-ads.txt" target="_blank" className="hover:text-slate-300 transition-colors font-mono">
-              app-ads.txt
-            </a>
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white transition-colors"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white transition-colors cursor-pointer"
               aria-label="Scroll to top"
             >
               <ArrowUp className="w-4 h-4" />

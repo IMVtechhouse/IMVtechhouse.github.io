@@ -1,36 +1,18 @@
 import React, { useState } from 'react';
-import { Menu, X, Smartphone, Globe, ShieldCheck, Mail, ExternalLink, Code2 } from 'lucide-react';
+import { Menu, X, Smartphone, Globe, Mail, Code2 } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Navbar({ onOpenContact, onOpenPrivacy }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#07090e]/80 border-b border-white/10 transition-all">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#07090e]/85 border-b border-white/10 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
           {/* Logo & Brand */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-11 h-11 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-center overflow-hidden shadow-lg shadow-cyan-500/10 group-hover:border-cyan-400 transition-colors">
-              <img 
-                src="/assets/imv-logo.png" 
-                alt="IMVtechHouse Logo" 
-                className="w-full h-full object-contain p-1"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'flex';
-                }}
-              />
-              <span className="hidden font-bold text-cyan-400 text-lg">IMV</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-xl tracking-tight text-white group-hover:text-cyan-400 transition-colors">
-                IMV<span className="text-cyan-400 font-light">techHouse</span>
-              </span>
-              <span className="text-[10px] tracking-wider uppercase text-slate-400 font-medium">
-                Software & Apps Studio
-              </span>
-            </div>
+          <a href="#" className="flex items-center group">
+            <Logo />
           </a>
 
           {/* Desktop Nav */}
@@ -47,17 +29,13 @@ export default function Navbar({ onOpenContact, onOpenPrivacy }) {
               <Code2 className="w-4 h-4 text-teal-400" />
               Services & ERP
             </a>
-            <a href="/app-ads.txt" target="_blank" rel="noreferrer" className="text-xs font-mono font-medium px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-all flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-              app-ads.txt
-            </a>
           </nav>
 
           {/* Actions */}
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={onOpenPrivacy}
-              className="text-xs text-slate-400 hover:text-slate-200 transition-colors underline underline-offset-4"
+              className="text-xs text-slate-400 hover:text-slate-200 transition-colors underline underline-offset-4 cursor-pointer"
             >
               Privacy Policy
             </button>
@@ -104,14 +82,6 @@ export default function Navbar({ onOpenContact, onOpenPrivacy }) {
             className="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800"
           >
             Services & ERP
-          </a>
-          <a 
-            href="/app-ads.txt" 
-            target="_blank" 
-            rel="noreferrer"
-            className="block px-3 py-2 rounded-lg text-sm font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20"
-          >
-            ✓ app-ads.txt (Live File)
           </a>
           <div className="pt-2 flex flex-col gap-2">
             <button

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Check, Sparkles, Smartphone, ShieldCheck, Clock, Award, Star, Download, TrendingUp } from 'lucide-react';
+import { ExternalLink, Check, Smartphone, Clock, Download, TrendingUp, Calendar, CheckSquare, DollarSign, ArrowUpRight, ArrowDownLeft, Shield } from 'lucide-react';
 
 export default function AppsSection({ onOpenContact }) {
   return (
@@ -17,7 +17,7 @@ export default function AppsSection({ onOpenContact }) {
             Built for Real Impact on <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Google Play</span>
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            Crafted with clean Android architecture, seamless animations, and privacy-first local databases.
+            Engineered with modern Android architecture, intuitive interfaces, and offline-first database resilience.
           </p>
         </div>
 
@@ -27,8 +27,8 @@ export default function AppsSection({ onOpenContact }) {
           {/* APP 1: Daily Planner */}
           <div id="daily-planner" className="rounded-3xl glass-panel-glow p-8 border border-cyan-500/25 relative flex flex-col justify-between group hover:border-cyan-400/50 transition-all shadow-xl">
             
-            {/* Top Status */}
             <div>
+              {/* Top Status */}
               <div className="flex items-center justify-between mb-6">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -69,7 +69,7 @@ export default function AppsSection({ onOpenContact }) {
                   'Dark & Light Dynamic Themes',
                   'Offline-First Local Storage',
                   'Priority & Category Filtering',
-                  'Google AdMob Integrated'
+                  'Lightweight & Battery Efficient'
                 ].map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-slate-300">
                     <div className="w-4 h-4 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
@@ -80,19 +80,56 @@ export default function AppsSection({ onOpenContact }) {
                 ))}
               </div>
 
-              {/* App Screenshot Preview Card */}
-              <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 mb-6 group/img">
-                <img 
-                  src="/assets/daily-planner.png" 
-                  alt="Daily Planner App on Google Play" 
-                  className="w-full h-56 object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
-                  <span className="font-medium">Play Store Listing Preview</span>
-                  <span className="px-2 py-0.5 rounded bg-slate-900/90 text-cyan-400 font-mono">Verified AdMob</span>
+              {/* Custom Designed Mobile In-App UI Preview (No Console Screenshot) */}
+              <div className="rounded-2xl border border-slate-800 bg-[#0b101b] p-5 mb-6 space-y-3.5 shadow-inner">
+                <div className="flex items-center justify-between border-b border-slate-800/80 pb-3">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-cyan-400" />
+                    <span className="text-xs font-semibold text-slate-200">Today's Schedule</span>
+                  </div>
+                  <span className="text-[11px] font-mono font-medium px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
+                    🔥 14-Day Streak
+                  </span>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 border border-slate-800/60">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-5 h-5 rounded-md bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</div>
+                      <span className="text-xs text-slate-300 line-through">Review Morning Strategy & Standup</span>
+                    </div>
+                    <span className="text-[10px] text-slate-500 font-mono">09:00 AM</span>
+                  </div>
+
+                  <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 border border-slate-800/60">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-5 h-5 rounded-md bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</div>
+                      <span className="text-xs text-slate-300 line-through">ERP System Client Deployment</span>
+                    </div>
+                    <span className="text-[10px] text-slate-500 font-mono">11:30 AM</span>
+                  </div>
+
+                  <div className="flex items-center justify-between p-2.5 rounded-xl bg-cyan-950/20 border border-cyan-500/30">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-5 h-5 rounded-md border border-cyan-400/60 flex items-center justify-center text-xs"></div>
+                      <span className="text-xs text-cyan-200 font-medium">Daily Planner 2.0 Release Prep</span>
+                    </div>
+                    <span className="text-[10px] text-cyan-400 font-mono">03:00 PM</span>
+                  </div>
+                </div>
+
+                {/* Progress bar */}
+                <div className="pt-2">
+                  <div className="flex justify-between text-[11px] text-slate-400 mb-1">
+                    <span>Task Completion</span>
+                    <span className="text-cyan-400 font-mono font-semibold">85% Complete</span>
+                  </div>
+                  <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
+                    <div className="w-[85%] h-full bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full" />
+                  </div>
                 </div>
               </div>
+
             </div>
 
             {/* Actions */}
@@ -101,19 +138,11 @@ export default function AppsSection({ onOpenContact }) {
                 href="https://play.google.com/store/apps/details?id=com.imvtechhouse.dailyplanner"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2 transition-all"
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2 transition-all cursor-pointer"
               >
                 <Download className="w-4 h-4" />
-                Get on Google Play
+                Download on Google Play
                 <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-              <a
-                href="/app-ads.txt"
-                target="_blank"
-                className="py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono border border-slate-700 transition-colors"
-                title="View app-ads.txt verification"
-              >
-                app-ads.txt
               </a>
             </div>
 
@@ -122,12 +151,12 @@ export default function AppsSection({ onOpenContact }) {
           {/* APP 2: PaisaFlow - Expense Manager */}
           <div id="paisaflow" className="rounded-3xl glass-panel-glow p-8 border border-indigo-500/25 relative flex flex-col justify-between group hover:border-indigo-400/50 transition-all shadow-xl">
             
-            {/* Top Status */}
             <div>
+              {/* Top Status */}
               <div className="flex items-center justify-between mb-6">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/15 text-amber-300 border border-amber-500/30">
                   <Clock className="w-3 h-3 text-amber-400 animate-spin" style={{ animationDuration: '6s' }} />
-                  Closed Testing Phase (11/14 Days)
+                  Closed Testing Phase • Production Launch Soon
                 </span>
                 <span className="text-xs font-mono text-slate-400">
                   com.imvtechhouse.paisaflow
@@ -164,7 +193,7 @@ export default function AppsSection({ onOpenContact }) {
                   'Monthly Budget Target Alerts',
                   '100% Private Offline Database',
                   'Multi-Currency & Reports Export',
-                  'Google Play Production Ready'
+                  'Zero Bank Credentials Required'
                 ].map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-slate-300">
                     <div className="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
@@ -175,33 +204,66 @@ export default function AppsSection({ onOpenContact }) {
                 ))}
               </div>
 
-              {/* App Screenshot Preview Card */}
-              <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 mb-6 group/img">
-                <img 
-                  src="/assets/paisaflow.png" 
-                  alt="PaisaFlow on Google Play Console" 
-                  className="w-full h-56 object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
-                  <span className="font-medium">12 Testers Opted In • 11/14 Days Complete</span>
-                  <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[11px]">Production Soon</span>
+              {/* Custom Designed Mobile In-App UI Preview (No Console Screenshot) */}
+              <div className="rounded-2xl border border-slate-800 bg-[#0b101b] p-5 mb-6 space-y-3.5 shadow-inner">
+                {/* Balance Card */}
+                <div className="p-4 rounded-xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-teal-950/30 border border-emerald-500/30 flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] uppercase font-mono tracking-wider text-slate-400">Total Net Balance</span>
+                    <div className="text-2xl font-heading font-extrabold text-white mt-0.5">₹48,250.00</div>
+                  </div>
+                  <div className="text-right">
+                    <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                      <ArrowUpRight className="w-3 h-3" /> +14.2%
+                    </span>
+                    <div className="text-[10px] text-slate-400 mt-1">October Cycle</div>
+                  </div>
+                </div>
+
+                {/* Flow Pills */}
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5 text-emerald-400">
+                      <ArrowDownLeft className="w-3.5 h-3.5" />
+                      <span>Inflow</span>
+                    </div>
+                    <span className="font-mono font-semibold text-slate-200">₹75,000</span>
+                  </div>
+                  <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5 text-rose-400">
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                      <span>Outflow</span>
+                    </div>
+                    <span className="font-mono font-semibold text-slate-200">₹26,750</span>
+                  </div>
+                </div>
+
+                {/* Category Bar */}
+                <div className="pt-1">
+                  <div className="flex justify-between text-[11px] text-slate-400 mb-1">
+                    <span>Top Expense: Operations & Dining</span>
+                    <span className="text-slate-300 font-mono">35%</span>
+                  </div>
+                  <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden flex">
+                    <div className="w-[35%] h-full bg-emerald-400" />
+                    <div className="w-[25%] h-full bg-cyan-400" />
+                    <div className="w-[20%] h-full bg-indigo-400" />
+                    <div className="w-[20%] h-full bg-slate-600" />
+                  </div>
                 </div>
               </div>
+
             </div>
 
             {/* Actions */}
             <div className="flex items-center gap-3 pt-4 border-t border-slate-800/80">
               <button
                 onClick={onOpenContact}
-                className="flex-1 py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm border border-slate-700 flex items-center justify-center gap-2 transition-all cursor-pointer"
+                className="w-full py-3.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm border border-slate-700 flex items-center justify-center gap-2 transition-all cursor-pointer"
               >
                 <TrendingUp className="w-4 h-4 text-emerald-400" />
-                Join Beta or Request Access
+                Join Closed Beta or Inquire
               </button>
-              <div className="py-2.5 px-3 rounded-xl bg-slate-900/80 text-slate-400 text-xs text-center border border-slate-800 font-mono">
-                Stage: Closed Test
-              </div>
             </div>
 
           </div>
