@@ -1,0 +1,30 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="imvFaviconCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="100%" stopColor="#0284C7" />
+    </linearGradient>
+    <linearGradient id="imvFaviconAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#67E8F9" />
+      <stop offset="100%" stopColor="#818CF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="120" height="120" rx="26" fill="#070D18" stroke="#38BDF8" stroke-width="3" stroke-opacity="0.6" />
+
+  <!-- I -->
+  <rect x="22" y="30" width="13" height="60" rx="3.5" fill="url(#imvFaviconCyan)" />
+
+  <!-- M Left Stem -->
+  <rect x="42" y="30" width="13" height="60" rx="3.5" fill="url(#imvFaviconCyan)" />
+
+  <!-- M Center Down -->
+  <polygon points="52,30 68,66 79,66 61,30" fill="url(#imvFaviconAccent)" />
+
+  <!-- M Center Up -->
+  <polygon points="68,66 85,30 96,30 79,66" fill="url(#imvFaviconCyan)" />
+
+  <!-- Connected V -->
+  <polygon points="76,64 88,90 100,90 87,62" fill="url(#imvFaviconAccent)" />
+  <polygon points="88,90 100,90 108,30 96,30" fill="url(#imvFaviconCyan)" />
+</svg>

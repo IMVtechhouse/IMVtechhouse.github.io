@@ -62,9 +62,9 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
                 </a>
               </li>
               <li>
-                <a href="mailto:aerosol.dev38@zohomail.in" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+                <a href="mailto:imvtechhouse@gmail.com" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
                   <Mail className="w-3.5 h-3.5 text-cyan-400" />
-                  aerosol.dev38@zohomail.in
+                  imvtechhouse@gmail.com
                 </a>
               </li>
               <li className="pt-2">

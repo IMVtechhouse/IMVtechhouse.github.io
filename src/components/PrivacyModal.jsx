@@ -48,7 +48,7 @@ export default function PrivacyModal({ isOpen, onClose }) {
           <p>
             For support inquiries, feedback, or data requests, contact us at:<br />
             <strong>Studio:</strong> IMVtechHouse<br />
-            <strong>Email:</strong> <a href="mailto:aerosol.dev38@zohomail.in" className="text-cyan-400 underline">aerosol.dev38@zohomail.in</a>
+            <strong>Email:</strong> <a href="mailto:imvtechhouse@gmail.com" className="text-cyan-400 underline">imvtechhouse@gmail.com</a>
           </p>
 
           <div className="pt-4 flex items-center justify-between border-t border-slate-800">
