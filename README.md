@@ -69,5 +69,5 @@ npm run build
 ## 📬 Contact & Developer Support
 
 - **Organization:** IMVtechHouse
-- **Email:** [aerosol.dev38@zohomail.in](mailto:aerosol.dev38@zohomail.in)
+- **Email:** [imvtechhouse@gmail.com](mailto:imvtechhouse@gmail.com)
 - **Play Console Developer:** IMVTechHouse
