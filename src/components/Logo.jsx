@@ -1,15 +1,14 @@
 import React from 'react';
 
 export default function Logo({ size = 'default', showText = true, className = '' }) {
-  // Size variants
   const isLarge = size === 'large';
-  const iconSize = isLarge ? 48 : 38;
+  const iconSize = isLarge ? 46 : 38;
 
   return (
     <div className={`flex items-center gap-3 select-none ${className}`}>
-      {/* Precision Geometric IMV Monogram SVG */}
+      {/* Precision Geometric IMV Monogram on High-Contrast Card */}
       <div 
-        className="relative flex items-center justify-center shrink-0 rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.35)]"
+        className="relative flex items-center justify-center shrink-0 rounded-xl overflow-hidden shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-all duration-300"
         style={{ width: iconSize, height: iconSize }}
       >
         <svg 
@@ -19,51 +18,38 @@ export default function Logo({ size = 'default', showText = true, className = ''
           className="w-full h-full"
         >
           <defs>
-            <linearGradient id="imvCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#38BDF8" />
-              <stop offset="100%" stopColor="#0284C7" />
+            <linearGradient id="logoCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="100%" stopColor="#F8FAFC" />
             </linearGradient>
-            <linearGradient id="imvAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#67E8F9" />
-              <stop offset="100%" stopColor="#818CF8" />
+            <linearGradient id="logoCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0284C7" />
+              <stop offset="100%" stopColor="#0369A1" />
             </linearGradient>
           </defs>
 
-          {/* Background Card */}
-          <rect width="120" height="120" rx="26" fill="#0C1322" stroke="url(#imvCyanGrad)" strokeWidth="2.5" strokeOpacity="0.4" />
+          {/* Crisp White Card for High Visibility */}
+          <rect width="120" height="120" rx="26" fill="url(#logoCardBg)" stroke="#38BDF8" strokeWidth="3" />
 
-          {/* Letter 'I' - Solid Vertical Bar */}
-          <rect x="22" y="30" width="13" height="60" rx="3.5" fill="url(#imvCyanGrad)" />
+          {/* Letter 'I' (Deep Navy) */}
+          <rect x="18" y="26" width="16" height="68" rx="4" fill="#091E42" />
 
-          {/* Letter 'M' & 'V' Interlocking Geometry */}
-          {/* M Left Stem */}
-          <rect x="42" y="30" width="13" height="60" rx="3.5" fill="url(#imvCyanGrad)" />
+          {/* Letter 'M' Left Stem (Deep Navy) */}
+          <rect x="40" y="26" width="16" height="68" rx="4" fill="#091E42" />
 
-          {/* M Central Diagonal Down: from (55, 30) down to (68, 64) */}
-          <polygon 
-            points="52,30 68,66 79,66 61,30" 
-            fill="url(#imvAccentGrad)" 
-          />
+          {/* 'M' Center Diagonal Down (Vibrant Cyan) */}
+          <polygon points="54,26 71,68 83,68 66,26" fill="url(#logoCyan)" />
 
-          {/* M Central Diagonal Up: from (68, 66) up to (85, 30) */}
-          <polygon 
-            points="68,66 85,30 96,30 79,66" 
-            fill="url(#imvCyanGrad)" 
-          />
+          {/* 'M' Center Diagonal Up (Deep Navy) */}
+          <polygon points="71,68 88,26 100,26 83,68" fill="#091E42" />
 
-          {/* Connected 'V' Right Diagonal: from (83, 62) down to (88, 90) and up to (104, 30) */}
-          <polygon 
-            points="76,64 88,90 100,90 87,62" 
-            fill="url(#imvAccentGrad)" 
-          />
-          <polygon 
-            points="88,90 100,90 108,30 96,30" 
-            fill="url(#imvCyanGrad)" 
-          />
+          {/* Connected 'V' Chevron (Vibrant Electric Cyan & Navy) */}
+          <polygon points="78,64 90,94 102,94 90,64" fill="#00B4D8" />
+          <polygon points="90,94 102,94 112,26 100,26" fill="#091E42" />
         </svg>
       </div>
 
-      {/* Typography */}
+      {/* Brand Typography */}
       {showText && (
         <div className="flex flex-col">
           <div className="flex items-center">

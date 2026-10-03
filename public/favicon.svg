@@ -1,30 +1,31 @@
 <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="imvFaviconCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#38BDF8" />
-      <stop offset="100%" stopColor="#0284C7" />
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#F1F5F9" />
     </linearGradient>
-    <linearGradient id="imvFaviconAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#67E8F9" />
-      <stop offset="100%" stopColor="#818CF8" />
+    <linearGradient id="favBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0284C7" />
+      <stop offset="100%" stopColor="#0369A1" />
     </linearGradient>
   </defs>
 
-  <rect width="120" height="120" rx="26" fill="#070D18" stroke="#38BDF8" stroke-width="3" stroke-opacity="0.6" />
+  <!-- High-contrast crisp white background for dark & light browser tabs -->
+  <rect width="120" height="120" rx="28" fill="url(#favBg)" stroke="#38BDF8" stroke-width="3" />
 
-  <!-- I -->
-  <rect x="22" y="30" width="13" height="60" rx="3.5" fill="url(#imvFaviconCyan)" />
+  <!-- Letter 'I' (Deep Navy) -->
+  <rect x="18" y="26" width="16" height="68" rx="4" fill="#091E42" />
 
-  <!-- M Left Stem -->
-  <rect x="42" y="30" width="13" height="60" rx="3.5" fill="url(#imvFaviconCyan)" />
+  <!-- Letter 'M' Left Stem (Deep Navy) -->
+  <rect x="40" y="26" width="16" height="68" rx="4" fill="#091E42" />
 
-  <!-- M Center Down -->
-  <polygon points="52,30 68,66 79,66 61,30" fill="url(#imvFaviconAccent)" />
+  <!-- 'M' Center Diagonal Down (Vibrant Blue) -->
+  <polygon points="54,26 71,68 83,68 66,26" fill="url(#favBlue)" />
 
-  <!-- M Center Up -->
-  <polygon points="68,66 85,30 96,30 79,66" fill="url(#imvFaviconCyan)" />
+  <!-- 'M' Center Diagonal Up (Deep Navy) -->
+  <polygon points="71,68 88,26 100,26 83,68" fill="#091E42" />
 
-  <!-- Connected V -->
-  <polygon points="76,64 88,90 100,90 87,62" fill="url(#imvFaviconAccent)" />
-  <polygon points="88,90 100,90 108,30 96,30" fill="url(#imvFaviconCyan)" />
+  <!-- Connected 'V' Chevron (Vibrant Electric Cyan & Navy) -->
+  <polygon points="78,64 90,94 102,94 90,64" fill="#00B4D8" />
+  <polygon points="90,94 102,94 112,26 100,26" fill="#091E42" />
 </svg>
