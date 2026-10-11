@@ -154,9 +154,9 @@ export default function AppsSection({ onOpenContact }) {
             <div>
               {/* Top Status */}
               <div className="flex items-center justify-between mb-6">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/15 text-amber-300 border border-amber-500/30">
-                  <Clock className="w-3 h-3 text-amber-400 animate-spin" style={{ animationDuration: '6s' }} />
-                  Closed Testing Phase • Production Launch Soon
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Live on Google Play
                 </span>
                 <span className="text-xs font-mono text-slate-400">
                   com.imvtechhouse.paisaflow
@@ -182,18 +182,18 @@ export default function AppsSection({ onOpenContact }) {
 
               {/* Description */}
               <p className="text-sm text-slate-400 leading-relaxed mb-6">
-                A modern expense and personal finance manager built to give users absolute clarity over cash inflows and outflows. Currently in Google Play Closed Testing with 12 active continuous testers, preparing for public production release.
+                A modern, privacy-first personal finance and expense manager built for real-world cashflow clarity. Features zero-permission offline UPI auto-detection, group bill splitting with zero debt residuals, multi-period budgets, and bank-grade statement exports.
               </p>
 
               {/* Feature Checklist */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 {[
-                  '1-Tap Quick Expense Logging',
-                  'Category Breakdown & Charts',
-                  'Monthly Budget Target Alerts',
-                  '100% Private Offline Database',
-                  'Multi-Currency & Reports Export',
-                  'Zero Bank Credentials Required'
+                  'Offline UPI Auto-Detection (0 SMS)',
+                  'Trip & Roommate Group Splitting',
+                  'Cash, UPI & Credit Card Accounts',
+                  'Daily, Weekly & Monthly Budgets',
+                  'Day-to-Day Financial Analytics',
+                  '100% Offline with Biometric Lock'
                 ].map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-slate-300">
                     <div className="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
@@ -257,13 +257,16 @@ export default function AppsSection({ onOpenContact }) {
 
             {/* Actions */}
             <div className="flex items-center gap-3 pt-4 border-t border-slate-800/80">
-              <button
-                onClick={onOpenContact}
-                className="w-full py-3.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm border border-slate-700 flex items-center justify-center gap-2 transition-all cursor-pointer"
+              <a
+                href="https://play.google.com/store/apps/details?id=com.imvtechhouse.paisaflow"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 transition-all cursor-pointer"
               >
-                <TrendingUp className="w-4 h-4 text-emerald-400" />
-                Join Closed Beta or Inquire
-              </button>
+                <Download className="w-4 h-4" />
+                Download on Google Play
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
 
           </div>

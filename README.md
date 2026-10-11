@@ -16,9 +16,10 @@ This repository powers the official website and verified root domain for **IMVte
   - [Google Play Store Link](https://play.google.com/store/apps/details?id=com.imvtechhouse.dailyplanner)
 
 - **PaisaFlow - Expense Manager** (`com.imvtechhouse.paisaflow`)
-  - Status: **Closed Testing Phase (11/14 Days Active)**
+  - Status: **Live on Google Play**
   - Category: Personal Finance & Budget Tracking
-  - Features: Daily expense logging, visual cash flow analytics, 100% private offline storage.
+  - Features: Offline UPI Auto-Detection (0 SMS), Group Bill Splitting, Tri-Mode Accounts, 100% private offline storage.
+  - [Google Play Store Link](https://play.google.com/store/apps/details?id=com.imvtechhouse.paisaflow)
 
 ---
 

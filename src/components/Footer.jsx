@@ -34,7 +34,7 @@ export default function Footer({ onOpenContact, onOpenPrivacy }) {
               </li>
               <li>
                 <a href="#paisaflow" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
-                  <span className="text-amber-400">•</span> PaisaFlow - Expense Manager
+                  <span className="text-emerald-400">•</span> PaisaFlow (Google Play)
                 </a>
               </li>
               <li>

@@ -132,11 +132,11 @@ export default function Hero({ onOpenContact }) {
                       <h4 className="text-sm font-semibold text-white group-hover/item:text-cyan-400 transition-colors">
                         PaisaFlow - Expense Manager
                       </h4>
-                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                        Closed Testing
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                        Live on Play Store
                       </span>
                     </div>
-                    <p className="text-xs text-slate-400 truncate mt-0.5">11/14 Days Tested • Production Ready Soon</p>
+                    <p className="text-xs text-slate-400 truncate mt-0.5">Offline UPI Detection, Groups & Analytics</p>
                   </div>
                 </div>
               </a>
